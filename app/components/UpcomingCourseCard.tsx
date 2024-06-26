@@ -13,10 +13,10 @@ export function UpcomingCourseCard({
 }: CourseCardProps) {
     const [openModal, setOpenModal] = useState(false);
 
-    return <div className="border rounded m-8">
-        <img src={imageUrl} className="w-full border-b rounded-lg w-full md:w-[450px]" />
+    return <div className="border border-gray-900 rounded m-8 shadow-md shadow-gray-600">
+        <img src={imageUrl} className="w-full border-b rounded-lg md:w-[450px]" />
         <div className="flex justify-between p-2">
-            <div className="text-xl flex flex-col justify-center">
+            <div className="text-xl text-gray-300 flex flex-col justify-center">
                 {title}
             </div>
             <Button onClick={() => {
