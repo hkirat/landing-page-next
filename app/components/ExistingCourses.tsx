@@ -14,7 +14,7 @@ export const ExistingCourses = () => {
     return (
         <div className="w-full md:px-8">
             <div className="flex justify-center pt-8">
-                <div className="text-3xl">Existing Courses</div>
+                <div className="text-3xl text-gray-300">Existing Courses</div>
             </div>
             <div className="md:flex justify-center">
                 {NEW_COURSES.map(course => <ExistingCourseCard key={course.title} href={course.href} title={course.title} imageUrl={course.imageUrl} />)}
