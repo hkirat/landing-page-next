@@ -12,11 +12,11 @@ const NEW_COURSES = [{
 
 export const ExistingCourses = () => {   
     return (
-        <div className="w-max-screen-md px-8">
+        <div className="w-full md:px-8">
             <div className="flex justify-center pt-8">
                 <div className="text-3xl">Existing Courses</div>
             </div>
-            <div className="flex justify-center">
+            <div className="md:flex justify-center">
                 {NEW_COURSES.map(course => <ExistingCourseCard key={course.title} href={course.href} title={course.title} imageUrl={course.imageUrl} />)}
             </div>
         </div>

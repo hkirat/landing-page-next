@@ -2,12 +2,11 @@ import { Button } from "./Button"
 
 export const Navbar = () => {
     return (
-        <div className="border-b">
-            <div className="flex  justify-between max-w-screen-xl mx-auto">
+            <div className="flex w-full justify-between">
                 <div className="text-2xl font-bold flex flex-col justify-center">
                     100xDevs
                 </div>
-                <div>
+                <div className="flex flex-row md:text-xl text-sm">
                     <Button onClick={() => {
                         window.location.href = "https://github.com/code100x"
                     }}>Open source</Button>
@@ -16,6 +15,5 @@ export const Navbar = () => {
                     }}>Youtube</Button>
                 </div>
             </div>
-        </div>
     )
 }
